@@ -1,0 +1,343 @@
+
+
+a{
+    color: #3d5fa5;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* option{
+    position: relative;
+    z-index: 0;
+} */
+
+span#birth {
+    margin-bottom: 4px;
+}
+
+.absolute{
+    position: absolute;
+}
+.modal-header{
+    background-color:  rgb(243, 242, 242);
+}
+.modal{
+ margin-top: 13%;
+}
+.inline{
+    display: inline-block;
+}
+ 
+
+.error{
+    position: relative;
+}
+
+ .error::after{
+     font-family: "Font Awesome 5 free";
+     font-weight: 900;
+     position: absolute;
+     top: 6px;
+     left: 190px;
+     content:'\f06a';
+     color: red;
+ }
+
+ .error-message{
+    background-color: rgba(177, 2, 2, 0.705);
+    
+    border: 1px solid rgba(100,2,2,.2);
+    border-left: none;
+    border-radius: .3rem;
+    box-shadow: 0 0 0 1px rgba(139, 3, 0, .75), 0 1px 10px rgba(0, 0, 0, .35);
+    color: white;
+    display: none;
+    padding: 9px;
+    position: absolute;  
+ }
+
+ .error-carret{
+    color: rgba(177, 2, 2, 0.705);
+    font-size:35px;
+    position: absolute;
+    
+ }
+ 
+
+.fFooter{
+    color: rgb(97, 97, 97);
+    font-size:14px;
+    margin-top: 10px;
+}
+
+.fHeader {
+    background-color: #3d5fa5;
+    color: white;
+    height: 90px;
+    width: 100%
+    
+}
+.form-control-updated{
+        display: block;
+        height: calc(1.5em + .75rem + 2px);
+        width: 219px;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        margin-bottom: 10px;
+}
+.gender{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.gradient{
+    background: linear-gradient(white, #D3D8E8);
+}
+
+.headLabel{
+    font-size:15px;
+}
+.input-heading{
+    color: grey;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main{
+    /* overflow: hidden; */
+
+}
+.q-body{
+    border-bottom: 1px rgba(128, 128, 128, 0.267) solid;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.q-footer{
+    text-align: right;
+}
+
+.q-text{
+    margin-bottom: 10px;
+}
+.questionMark{
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 1px 10px rgba(0, 0, 0, .35);
+    padding: 10px;
+    position: absolute;
+    width: 300px;
+}
+.question-carret{
+    font-size: 27px;
+    position: absolute;
+    color: #fff;
+}
+.relative{
+    position: relative;
+}
+.wrapper{
+    position: absolute;  
+}
+
+
+#body-form{
+     top:10px;
+}
+#btnsubmit{
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important;
+    font-size: 20px;
+    font-weight: bold;
+    width: 165px;
+}
+
+#car-email{
+    bottom:15px;
+    right: 269px;
+
+}
+#car-qdob{
+    left: 300px;
+    top:5px;
+}
+#car-qgender{
+    left: 300px;
+    top:30px;
+}
+#car-reenter{
+    bottom: 50px;
+    right: 150px;
+}
+#car-right{
+    top: 5px;
+    left: 168px;
+
+}
+#car-sname{
+    bottom: 15px;
+    right: 170px;
+}
+#car-pswd{
+    bottom: 81px;
+}
+#dataPolicy{   
+    color: rgb(78, 78, 78);
+    font-size: 12px;
+    margin-bottom: 20px;
+    width: 330px;
+}
+
+#div-email.error::after,#re-enter.error::after,#div-pswd.error::after {
+    left: 420px;
+}
+ #div-gender{
+    position: relative;
+    z-index: 1;
+}
+#div-login{
+    padding-top: 9px;
+}
+#div-login input{
+    border: 1px solid #29487d;
+}
+#div-login a{
+    color:rgba(255, 255, 255, 0.534);
+    font-size: 13px;
+}
+#div-login-password{
+    left: 205px;
+}
+#div-login-button{
+    left:405px;
+    top:40px;
+}
+#day,#month, #year{
+    position: relative;
+    /* z-index: 0; */
+}
+#dOB{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+#email,#pswd, #re_enter{
+    margin-bottom: 10px;
+    width: 446px;
+    
+}
+#error-email{
+    top: -14px;
+    left: 475px;
+    width: 270px;
+}
+#error-fname{
+    width: 169px;
+    right: 30px; 
+    height: 45px; 
+
+}
+
+#error-sname{
+    /* bottom: 1px; */
+    top: -15px;
+    width: 170px;
+    left: 260px;
+}
+#f1>.form-row>.col{
+ flex-grow: 0;
+ padding-right: 0;
+}
+
+#facebook{
+    margin-top: 20px;
+    width: 200px;
+}
+
+#filler{
+    width: 537px;
+}
+#filler-head{
+    color: #192d50;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 17px;
+    width: 450px;
+}
+#filler-body{
+
+    background-image: url("../logo_Img/facebook_map.png");
+    height: 200px;
+    margin-top: 22px;
+}
+#forgottenAccount{
+    top: 60px;
+    width: 150px
+}
+#fname{
+    margin-right: 5px;
+}
+#login-email{
+    top:30px
+}
+#login-password{
+    top: 30px;
+}
+#myModal{
+    display: none;
+}
+#passwordError{
+    width: 300px;
+    left: 200px;
+    top:80px;
+}
+#pUnderBodyHeader{
+    font-size: 20px;
+}
+/* #q-button1{
+    float: right;
+} */
+
+#q-dob{
+    top: 27px;
+    right: 369px;
+    display: none;
+    position: absolute;
+}
+#q-gender {
+    display:none;
+    top: 7px;
+    right: 265px;
+}
+#re-enter{
+    display: none;
+}
+#reErrorMessage{
+ 
+    left: 290px;
+    top: -25px;
+    width: 150px;
+    ;
+}
+#reWrapper{
+  left: 200px;
+}
+#year{
+    margin-right: 13px;
+}
+
+
+
+
+
+
+
+

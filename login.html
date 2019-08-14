@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Facebook - log in or sign up</title>
+    <link rel="shortcut icon" type = "image/png" href="logo_Img/facebook_icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="./JS/main.js" type="module"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-5.8.2/css/all.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/button_fb.css">
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+
+</head>
+<body>
+
+  <div class="fHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="login.html"><img src="logo_img/facebook.png" alt="facebook" id="facebook"></a>
+        </div>
+        <div class="col-md-6">
+          <div class="relative" id="div-login">
+            <form action="" id="logIn">
+              <!-- Login In -->
+                <div class="inline absolute" id="div-login-email">
+                  <label for="login-email" class="headLabel">Email or Phone</label>
+                  <input id="login-email" class="absolute" name="email" type="text" required>
+                </div>
+        
+                  
+                <div class="inline absolute" id="div-login-password">
+                  <label for="login-password" class="headLabel">Password</label>
+                  <input id="login-password"  class ="absolute"name="password" type="password"  required>
+                  <a href="" class="absolute" id="forgottenAccount">Forgotten account?</a>
+                </div>
+                  
+                <div class="absolute" id="div-login-button">
+                  <input class="btn-login" name="login"type="submit" value="Log In">
+                </div>
+                  
+                  
+            </form>
+          </div>
+        </div>
+            <!-- <div class="logo"></div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Body -->
+  <div class="fBody gradient">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div id="filler">
+                <div id="filler-head">Facebook helps you connect and share with the people in your life.</div>
+                <div id="filler-body"></div>   <!-- BODY-->
+              </div>
+    
+            </div>
+            <div class="col-sm">    
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Confirm your date of birth</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                  
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        Is <strong>1 Jan 1990</strong> your date of birth?
+                      </div>
+                  
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-fb-no" data-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-fb-yes" id="yes" data-dismiss="modal">Yes</button>
+                      </div>
+                  
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="relative" id="body-form">
+                    <h1>Create an account</h1>
+                    <p id="pUnderBodyHeader">It's free and always will be.</p>
+            
+                    <!-- The Form -->
+                    <form action="" method="GET" id="f1">
+                    <div class="form-row">
+                      <div class="col">
+  
+                       <!-- First Name -->
+                       <div class="" id ="div-fname">
+                          <div class="wrapper">
+                            <div class="error-message" id="error-fname">
+                              What's your name?
+            
+                              <i class="fas fa-caret-right  error-carret" id="car-right"></i>
+                            </div>
+                          </div>
+            
+                          <input class="form-control-updated" name ="firstname" placeholder="First name" type="text" id="fname" data-toggle="tooltip" data-placement="top" required >
+                        </div>                      </div>
+                      <div class="col">
+
+                          <!-- Surname -->
+                          <div class="" id="div-sname">
+                              <div class="wrapper">
+                                <div class="error-message" id="error-sname">
+                                  What's your family name?
+                                  <i class="fas fa-caret-left  error-carret" id="car-sname"></i>
+    
+                                </div>
+                              </div>
+                              <input class="form-control-updated" name ="surname" placeholder="Surnname" type="text" id="sname" required>
+                            </div>
+                       </div>
+                    </div>
+
+
+            
+
+                        <!-- Email -->
+                        <div id="div-email">
+                          <div class="wrapper">
+                            <div class="error-message" id="error-email">
+                              Please enter a valid email or phone number
+                              <i class="fas fa-caret-left  error-carret" id="car-email"></i>
+                              
+                            </div>
+                          </div>
+                            <input 
+                                class="form-control"
+                                name="email" 
+                                id="email"
+                                oninput="this.setCustomValidity('')"
+                                oninvalid="this.setCustomValidity('Please input a valid email or phone number')" 
+                                pattern="^([0-9]{9,12})|([A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})$" 
+                                placeholder="Mobile number or email address" type="text" required>
+                        </div>
+            
+                        <!-- Re Enter Email/Phone Number -->
+                        <div id="re-enter" class="">
+                          <!-- The error message -->
+                          <div class="wrapper" id="reWrapper">
+                            <div class="error-message" id="reErrorMessage">
+                              <div class="content" id="reContent">
+            
+                              </div>
+                              <i class="fas fa-caret-left  error-carret" id="car-reenter"></i>
+                            </div>
+                          </div>
+                          <input
+                            class="form-control" 
+                            name="email"
+                            id="re_enter"
+                            placeholder="re-enter email or password" type="text" required>
+                          </div>
+            
+                        <!-- Password -->
+                        <div class="" id="div-pswd">   
+                          <div class="error-message" id="passwordError">
+                              Enter a combination of at least six numbers, letters and punctuation marks (like ! and &')
+                              <i class="fas fa-caret-up  error-carret" id="car-pswd"></i>
+                          </div>    
+                          <input
+                            class="form-control" 
+                            name ="password" 
+                            id="pswd"
+                            oninput="this.setCustomValidity('')" 
+                            oninvalid="this.setCustomValidity('Enter a combination of at least six numbers, letters and punctuation marks (like ! and &')" 
+                            pattern="^[0-9a-zA-Z.!,?@]{6,}$"
+                            placeholder="New Password" type ="password" required>
+                        </div>
+            
+                        <!-- Date of Birth -->
+                        <div id="dOB">
+                                <span id="birth" class="input-heading">Birthday</span>
+                                <select name="day" id="day">
+                                    <option >1</option>
+                                    <option >2</option>
+                                    <option >3</option>
+                                    <option >4</option>
+                                    <option >5</option>
+                                    <option >6</option>
+                                    <option >7</option>
+                                </select>
+                                <select name="month" id="month">
+                                    <option value="1">Jan</option>
+                                    <option value="2">Feb</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                </select>
+                                <select name="year" id="year">
+                                    <option >1990</option>
+                                    <option >1991</option>
+                                    <option >1992</option>
+                                    <option >1993</option>
+                                    <option >1994</option>
+                                    <option >1995</option>
+                                    <option >1996</option>
+                                </select><i class="fas fa-question-circle grey" id="questionMark1"></i>
+                                <div class="questionMark" id="q-dob">
+                                  <div class="q-body">
+                                    <div class="q-text">
+                                        <strong>Providing your date of birth</strong> helps make sure that you get the right Facebook experience for your age. If you want to change who sees this, go to the About section of your Profile. For more details, please visit our <a href="https://www.facebook.com/privacy/explanation/">Data Policy</a>.
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="q-footer">
+                                    <input type="button" class="btn-login" value="close" id="q-button1"> 
+                                  </div>
+                                  <i class="fas fa-caret-right question-carret" id="car-qdob"></i>
+                                </div>
+                        </div>
+             
+            
+            
+                    <!-- Gender -->
+                    <div id="div-gender">
+                      <span id="spn-gender" class="input-heading">Gender</span>
+                      <label id="female" class="gender"><input type="radio" name="gender"  value ="Female" required>Female</label>
+                      <label id="male" class="gender"><input type="radio" name="gender" value ="Male" required>Male</label>
+                      <label id="Custom" class="gender"><input type="radio" name="gender" value="other" required>Custom</label>
+                      <i class="fas fa-question-circle grey" id="questionMark2"></i>
+                      <div class="questionMark" id="q-gender">
+                          <div class="q-body">
+                            <div class="q-text">
+                                You can change who sees your gender on your profile later. Select Custom to choose another gender, or if you'd rather not say.
+                            </div>
+                            
+                          </div>
+                          <div class="q-footer">
+                            <input type="button" class="btn-login" value="close" id="q-button2"> 
+                          </div>
+                          <i class="fas fa-caret-right question-carret" id="car-qgender"></i>
+                        </div>
+                    </div>
+                    <div id="dataPolicy">
+                      By clicking Sign Up, you agree to our <a href="https://www.facebook.com/legal/terms/update">Terms</a>, <a href="https://www.facebook.com/about/privacy/update">Data Policy</a> and <a href="https://www.facebook.com/policies/cookies/">Cookie Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+                    </div>
+                    </div class=""><input class="btn-shadow1 btn-signUp" type="submit" value="Sign Up" id="btnsubmit"></div>
+                    
+
+                </form>
+                </div>
+    
+            </div>
+        </div>
+      </div>  
+
+  </div>
+
+
+    <div class="fFooter">
+      <div class="container">
+        Ogaga Isiavwe &#x00A9;2019
+      </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
